@@ -19,10 +19,13 @@ Uses discord slash commands for easy command use.
 - openai
 
 ## Setup
-Edit "example_config.json" and add in your discord bots token, clientID and the guildID for the server you want it in. Then rename it to "config.json".
+install the requirements using npm
 
-Edit the BaseURL and apiKey in "modules/llm.ts" to match you LLM API. Uses a localhost server on port 1234 by default (The LM Studio Default)
+Edit `example_config.json` and add in your discord bots token, clientID and the guildID for the server you want it in. Then rename it to `config.json`.
 
+Edit the BaseURL and apiKey in `modules/llm.ts` to match you LLM API. Uses a localhost server on port 1234 by default (The LM Studio Default)
+
+Complile the Typescript using `tsc` and run using NodeJS. `index.js` is the program start.
 ## Warning
 Not designed for use in a public server in current form. There are no safety features built-in to prevent content that violates Discord's Community Guidelines.
 
